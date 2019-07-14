@@ -1,7 +1,7 @@
 baseurl: ''
 exclude: ['README.md']
 permalink: pretty
-title: 'Jekyll Serif'
+title: 'voteclustering'
 
 collections:
   services:
@@ -10,8 +10,11 @@ collections:
   team:
     output: true
     permalink: /team/:path/
-  testimonials:
+  contact:
     output: true
+    permalink: /contact/:path/
+  testimonials:
+    output: false
     permalink: /testimonials/:path/
 
 defaults:

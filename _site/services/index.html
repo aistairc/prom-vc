@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Services</title>
+  <title>Details</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="/images/favicon.png">
   <link href="/assets/css/style.css" rel="stylesheet">
@@ -11,16 +11,17 @@
   <div id="main-menu-mobile" class="main-menu-mobile">
   <ul>
     <li><a href="/" class="">Home</a></li>
-    <li><a href="/services/" class="current">Services</a></li>
-    <li><a href="/team/" class="">Team</a></li>
-    <li><a href="/testimonials/" class="">Testimonials</a></li>
-    <li><a href="/contact/" class="">Contact</a></li>
+    <li><a href="/services/" class="current">Details</a></li>
+    <li><a href="/contact/" class="">Contact Us</a></li>
+    <li><a href="https://ja.voteclustering.org/">Japanese</a></li>
+	<!--
+	<li><a href="/testimonials/" class="">Testimonials</a></li>
+    -->
   </ul>
 </div>
   <div id="wrapper" class="wrapper">
     <div class='header header-extra'>
   <div class="container">
-  	<!--
     <div class="logo">
       <a href="/"><img alt="Figurit Homepage" src="/assets/images/logo.svg" /></a>
     </div>
@@ -30,10 +31,11 @@
     <div id="main-menu" class="main-menu">
   <ul>
     <li><a href="/" class="">Home</a></li>
-    <li><a href="/services/" class="current">Services</a></li>
-    <li><a href="/team/" class="">Team</a></li>
-    <li><a href="/testimonials/" class="">Testimonials</a></li>
-    <li><a href="/contact/" class="">Contact</a></li>
+    <li><a href="/services/" class="current">Details</a></li>
+    <li><a href="/contact/" class="">Contact Us</a></li>
+    <li><a href="https://ja.voteclustering.org/">Japanese</a></li>
+<!--    <li><a href="/testimonials/" class="">Testimonials</a></li>
+    <li><a href="/contact/" class="">Contact</a></li>-->
   </ul>
 </div>
     <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
@@ -41,17 +43,20 @@
     <span class="hamburger-inner"></span>
   </span>
 </button>
-	-->
   </div>
 </div>
-    <div class="intro">
+    <div class="intro pb-6 pt-12">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1>Services that grow with your business</h1>
+        <h1>Survey that can handle diverse opinions</h1>
         <p>
-          Our business helps hundreds of customers with their accounting and
-          taxation needs each year.
+          voteclustering
+          <ul>
+            <li>is able to incorporate open-ended questions, e.g., "What do you think about ...?"</li>
+            <li>helps you to summarize reponsenses of large-scale surveys.</li>
+            <li>is free.</li>
+          </ul>
         </p>
       </div>
     </div>
@@ -59,76 +64,87 @@
 </div>
 
 <div class="container pb-6">
+  <h2 class="title-4 text-dark mb-4">How it works</h2>
+   <div class="row">
+    <div class="col-12 col-md-8">
+      <h4 class="mt-4">A graph-based framework</h4>
+      <p>
+        For a respondent, the procedure looks prety much the same as the standard survey: 
+        Each respondent reads a set of responses and assesses whether he/she agree with each of them. 
+        Afterward, the respondent writes down his/her own response if there is any. That's it!
+      </p>
+      <p>
+        What's important here is that the responses that are presented to each respondent are chosen randomly. 
+        The record of this procedure constitutes a graph (or a network) of opinions. 
+        Then, the responses can be summarized into typical responses with the help of graph clustering algorithms. 
+      </p>
+      <img class="service-image" src="/images/services/detail-fig_en-S.svg" alt="opinion_graph">
+
+      <h4 class="mt-4">Nonparametric</h4>
+      <p>
+        High degrees of freedom by incorporating free-format responses is an important feature of voteclustering. 
+        On the other hand, voteclustering functions just like a classical multiple-choice survey whenever a survey ended up with responses without much diversity. 
+        (And in this sense, our survey is <i>nonparametric</i>. ) 
+        Therefore, voteclustering can always be a choice. 
+
+      </p>
+      <h4 class="mt-4">Democratic</h4>
+      <p>
+        The result of our survey is <i>democratic</i>. 
+        That is, the classification of the responses is performed on the basis of information input by the respondents themselves, rather than by a subjective criterion of an analyst or a completely objective distance measure of words. 
+      </p>
+      <h4 class="mt-4"></h4>
+      <p>
+        For more details, please take a look at our paper:
+        <blockquote>
+          Tatsuro Kawamoto and Takaaki Aoki, 
+          <a href="https://www.nature.com/articles/s42256-019-0071-y" target="_blank">"Democratic classification of free-format survey responses with a network-based framework," 
+          <i>Nature Machine Intelligence</i> (2019).</a>
+        </blockquote>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6">
+  <h2 class="title-4 text-dark mb-4">Implementations</h2>
   <div class="row">
     
     <div class="col-12 col-md-4 mb-1">
-      <div class="service service-summary">
+      <div class="service service-summary pt-2">
+        <img class="service-image" src="/images/services/1_onlinesurvey.svg">
         <div class="service-content">
           <h2 class="service-title">
-            <a href="/services/accounting/">Accounting</a>
+            <a href="/services/a_online-survey/">Online survey</a>
           </h2>
-          Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavi...
+          The standard implementation of voteclustering is the web survey.
+
         </div>
       </div>
     </div>
     
     <div class="col-12 col-md-4 mb-1">
-      <div class="service service-summary">
+      <div class="service service-summary pt-2">
+        <img class="service-image" src="/images/services/2_offlinesurvey.svg">
         <div class="service-content">
           <h2 class="service-title">
-            <a href="/services/business-advisory/">Business Advisory</a>
+            <a href="/services/b_offline-survey/">Offline survey</a>
           </h2>
-          Lorem markdownum, dictis umbrosum dextrum, Lelegeia quamquam distantes pares
-ignisque quaerit ded...
+          The essentail architecture of voteclustering can also be implemented in an offline situation.
+
         </div>
       </div>
     </div>
     
     <div class="col-12 col-md-4 mb-1">
-      <div class="service service-summary">
+      <div class="service service-summary pt-2">
+        <img class="service-image" src="/images/services/3_vending machine.svg">
         <div class="service-content">
           <h2 class="service-title">
-            <a href="/services/business-sales/">Business Sales</a>
+            <a href="/services/c_vending-machine/">The Vending Machine</a>
           </h2>
-          Cyanee nec pedicis positi. Esse et diem forte quoque et ieiunia
-vixque dixit negari ullis stamina...
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-12 col-md-4 mb-1">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="/services/mergers/">Mergers</a>
-          </h2>
-          Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavi...
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-12 col-md-4 mb-1">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="/services/superannuation/">Superannuation</a>
-          </h2>
-          Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavi...
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-12 col-md-4 mb-1">
-      <div class="service service-summary">
-        <div class="service-content">
-          <h2 class="service-title">
-            <a href="/services/tax-preperation/">Tax Preperation</a>
-          </h2>
-          Lorem markdownum Achaica revolutaque amore, penitus puppes nec furit,
-clipeus fatetur, mira inter...
+          It’s not ready yet!
+
         </div>
       </div>
     </div>
@@ -141,14 +157,13 @@ clipeus fatetur, mira inter...
     <div class="row">
       <div class="col-12">
         <div class="footer">
-          <!--
-          <h3 class="footer-title">Jekyll Serif</h3>
+          <h3 class="footer-title">voteclustering</h3>
           <ul class="footer-menu">
             <li><a href="/">Home</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li class="copyright">© Jekyll Serif 2019</li>
+            <!--<li><a href="/contact">Contact</a></li>-->
+            <li class="copyright">© voteclustering 2019</li>
+            <li class="logo"><a href="https://www.aist.go.jp/index_en.html"><img src="/assets/images/logo-aist.svg"></a></li>
           </ul>
-          -->
         </div>
       </div>
     </div>
@@ -159,16 +174,11 @@ clipeus fatetur, mira inter...
     <div class="row">
       <div class="col-12">
         <div class="sub-footer">
-          <!--
           <ul>
-            <li><strong>Phone: </strong>XXXX XXX XXX</li>
-            <li><strong>Email: </strong><a href="mailto:zerostaticthemes@gmail.com">
-                zerostaticthemes@gmail.com</a></li>
+            <li><strong>Maintained by: </strong>National Institute of Advanced Industrial Science and Technology, Artificial Intelligence Research Center (2-3-26 Aomi, Koto-ku, Tokyo), Last update: Jul. 14, 2019</li>
+            <li><strong>Email: </strong><a href="mailto:request@voteclustering.org">
+                request@voteclustering.org</a></li>
           </ul>
-          <ul>
-            <li><a href="https://www.zerostatic.io">www.zerostatic.io</a></li>
-          </ul>
-          -->
         </div>
       </div>
     </div>

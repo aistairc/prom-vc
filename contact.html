@@ -1,14 +1,14 @@
 ---
 title: Contact
 layout: default
-bodyClass: page-contact
+bodyClass: page-contact-list
 ---
 
 <div class="intro intro-small">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1>Contact</h1>
+        <h1>Contact us!</h1>
       </div>
     </div>
   </div>
@@ -16,59 +16,71 @@ bodyClass: page-contact
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-8">
+      <strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
+            {{ site.data.contact.email }}</a>
+      <p>To use voteclustering, please send us an email with the following information.</p>
       <ul>
-        <li><strong>Phone: </strong>{{ site.data.contact.phone }}</li>
-        <li><strong>Email: </strong><a href="mailto:{{ site.data.contact.email }}">
-            {{ site.data.contact.email }}</a></li>
+        <li>Basic information of you and your survey (listed below)</li>
         {% if site.data.contact.address %}
-        <li><strong>Address: </strong>{{ site.data.contact.address }}</li>
+        <!-- <li><strong>Address: </strong>{{ site.data.contact.address }}</li> -->
         {% endif %}
       </ul>
-      <h4 class="mt-4">Business Hours</h4>
+
+      <h4 class="mt-4">Policy</h4>
+      <p>By sending us an email, you are deemed to have understood and agreed with the following policy.</p>
+      <p>Please understand that we are not conducting this project as a service. 
+      We accept your request for the purpose of developing the present framework and improving the statistical analysis behind. Therefore, we may not accept all requests. We prioritize the requests that are more likely to be large-scale and draw interesting outcomes. We prioritize requests for academic and nonprofit purposes over the ones for buisiness purposes.
+      </p>
+      <p>
+        With that being said, we basically accept all kinds of surveys. Please feel free to contact us!
+      </p>
+
+      <div>
+        <h4 class="mt-4">Procedure</h4>
+        <ol>
+          <li>After sending us an email, we will consider your proposal. </li>
+          <li>We then ask you to sign our consent form.</li>
+          <li>You set up questions using our Survey Setting Sysmtem. </li>
+          <li>The survey will be active in few days.</li>
+          <li>After the survey is conducted, we will send you the results and analysis.</li>
+        </ol>
+        <p>Please take an ethical review with your own responsibility when it is required. 
+          Also, please note that we are not hiring respondents. Therefore, when you conduct a public survey, you will need to ask people to respond by yourself. </p>
+      </div>
+
+      <h4 class="mt-4">Basic information of you and your survey</h4>
       <table class="table table-sm opening-hours-table">
         <tr>
-          <td class="day font-weight-bold">Monday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
+          <td class="day font-weight-bold">Name</td>
         </tr>
         <tr>
-          <td class="day font-weight-bold">Tuesday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
+          <td class="day font-weight-bold">Affiliation</td>
         </tr>
         <tr>
-          <td class="day font-weight-bold">Wednesday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
+          <td class="day font-weight-bold">Your email</td>
         </tr>
         <tr>
-          <td class="day font-weight-bold">Thursday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
+          <td class="day font-weight-bold">Survey type</td>
+          <td class="opens">Academic, Nonprofit, etc.</td>
         </tr>
         <tr>
-          <td class="day font-weight-bold">Friday</td>
-          <td class="opens">8:30am</td>
-          <td>-</td>
-          <td class="closes">5:00pm</td>
+          <td class="day font-weight-bold">Survey period</td>
+          <td class="opens">Starting date and Expiring date</td>
         </tr>
         <tr>
-          <td class="day font-weight-bold">Saturday</td>
-          <td class="opens">Closed</td>
-          <td></td>
-          <td class="closes"></td>
+          <td class="day font-weight-bold">Data/results treatment</td>
+          <td class="opens">Open dataset, Temporarily confidential (+condition), or Confidential</td>
         </tr>
         <tr>
-          <td class="day font-weight-bold">Sunday</td>
-          <td class="opens">Closed</td>
-          <td> </td>
-          <td class="closes"></td>
+          <td class="day font-weight-bold">Purpose</td>
+          <td class="opens">Please briefly explain.</td>
+        </tr>
+        <tr>
+          <td class="day font-weight-bold">Target respondents</td>
+          <td class="opens">Public, Survey monitors that you have a contract, Members of your organization, etc.</td>
         </tr>
       </table>
+
     </div>
   </div>
 </div>

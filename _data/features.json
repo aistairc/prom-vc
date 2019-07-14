@@ -1,17 +1,17 @@
 [
   {
-    "title": "Free Consultation",
-    "description": "New clients recieve an obligation free consultation.",
-    "image": "images/features/noun_branding_1885335.svg"
+    "title": "Novel framework",
+    "description": "You can efficiently summarize responses to open-ended questions.",
+    "image": "images/features/1_novelframework.svg"
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
-    "image": "images/features/noun_The Process_1885341.svg"
+    "title": "Easy to set up",
+    "description": "Setting up voteclustering is as easy as setting a classical survey.",
+    "image": "images/features/2_noadditionalefforts.svg"
   },
   {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
-    "image": "images/features/noun_3d modeling_1885342.svg"
+    "title": "Easy for respondents",
+    "description": "Responding to voteclustering is as easy as responding to a classical survey.",
+    "image": "images/features/3_advancedanalysis.svg"
   }
 ]

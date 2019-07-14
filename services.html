@@ -1,17 +1,21 @@
 ---
-title: Services
+title: Details
 layout: default
 bodyClass: page-services-list
 ---
 
-<div class="intro">
+<div class="intro pb-6 pt-12">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h1>Services that grow with your business</h1>
+        <h1>Survey that can handle diverse opinions</h1>
         <p>
-          Our business helps hundreds of customers with their accounting and
-          taxation needs each year.
+          voteclustering
+          <ul>
+            <li>is able to incorporate open-ended questions, e.g., "What do you think about ...?"</li>
+            <li>helps you to summarize reponsenses of large-scale surveys.</li>
+            <li>is free.</li>
+          </ul>
         </p>
       </div>
     </div>
@@ -19,15 +23,60 @@ bodyClass: page-services-list
 </div>
 
 <div class="container pb-6">
+  <h2 class="title-4 text-dark mb-4">How it works</h2>
+   <div class="row">
+    <div class="col-12 col-md-8">
+      <h4 class="mt-4">A graph-based framework</h4>
+      <p>
+        For a respondent, the procedure looks prety much the same as the standard survey: 
+        Each respondent reads a set of responses and assesses whether he/she agree with each of them. 
+        Afterward, the respondent writes down his/her own response if there is any. That's it!
+      </p>
+      <p>
+        What's important here is that the responses that are presented to each respondent are chosen randomly. 
+        The record of this procedure constitutes a graph (or a network) of opinions. 
+        Then, the responses can be summarized into typical responses with the help of graph clustering algorithms. 
+      </p>
+      <img class="service-image" src="/images/services/detail-fig_en-S.svg" alt="opinion_graph">
+
+      <h4 class="mt-4">Nonparametric</h4>
+      <p>
+        High degrees of freedom by incorporating free-format responses is an important feature of voteclustering. 
+        On the other hand, voteclustering functions just like a classical multiple-choice survey whenever a survey ended up with responses without much diversity. 
+        (And in this sense, our survey is <i>nonparametric</i>. ) 
+        Therefore, voteclustering can always be a choice. 
+
+      </p>
+      <h4 class="mt-4">Democratic</h4>
+      <p>
+        The result of our survey is <i>democratic</i>. 
+        That is, the classification of the responses is performed on the basis of information input by the respondents themselves, rather than by a subjective criterion of an analyst or a completely objective distance measure of words. 
+      </p>
+      <h4 class="mt-4"></h4>
+      <p>
+        For more details, please take a look at our paper:
+        <blockquote>
+          Tatsuro Kawamoto and Takaaki Aoki, 
+          <a href="https://www.nature.com/articles/s42256-019-0071-y" target="_blank">"Democratic classification of free-format survey responses with a network-based framework," 
+          <i>Nature Machine Intelligence</i> (2019).</a>
+        </blockquote>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="container pb-6">
+  <h2 class="title-4 text-dark mb-4">Implementations</h2>
   <div class="row">
     {% for service in site.services %}
     <div class="col-12 col-md-4 mb-1">
-      <div class="service service-summary">
+      <div class="service service-summary pt-2">
+        <img class="service-image" src="{{ service.image }}">
         <div class="service-content">
           <h2 class="service-title">
             <a href="{{site.baseurl}}{{ service.url }}">{{ service.title }}</a>
           </h2>
-          {{ service.content | markdownify | strip_html | truncate: 100 }}
+          {{ service.content | markdownify | strip_html | truncate: 200 }}
         </div>
       </div>
     </div>

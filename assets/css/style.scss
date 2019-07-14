@@ -64,9 +64,11 @@
 @import 'components/strip';
 @import 'components/whitebox';
 @import 'components/feature';
+@import 'components/movie';
 
 // Pages
 @import 'pages/home';
+@import 'pages/contact/page-contact-list';
 @import 'pages/team/team-list';
 @import 'pages/team/team-summary';
 @import 'pages/team/page-team-list';
